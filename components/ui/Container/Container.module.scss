@@ -1,0 +1,11 @@
+.root {
+    @apply max-w-container mx-auto px-container w-full;
+}
+
+.lg {
+    @apply max-w-container-lg;
+}
+
+.full {
+    @apply max-w-none;
+}

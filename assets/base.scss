@@ -1,0 +1,10 @@
+:root {
+  --container: calc(71.25rem + var(--container-padding) * 2);
+  --container-lg: calc(87.5rem + var(--container-padding) * 2);
+  --container-padding: 3.5rem;
+
+  --primary: #173270;
+  --secondary: #e2b71c;
+  --secondary-dark: #b69316;
+  --tertiary: #22abc3;
+}

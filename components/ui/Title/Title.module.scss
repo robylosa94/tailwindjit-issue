@@ -1,0 +1,15 @@
+.root {
+    @apply font-bold text-4xl;
+}
+
+.sm {
+    @apply text-3xl;
+}
+
+.lg {
+    @apply text-5xl;
+}
+
+.xl {
+    @apply text-7xl tracking-tight;
+}

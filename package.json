@@ -1,0 +1,50 @@
+{
+  "name": "tailwindjit-issue",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "find:unused": "next-unused"
+  },
+  "next-unused": {
+    "alias": {
+      "@components/*": [
+        "components/*"
+      ]
+    },
+    "debug": true,
+    "include": [
+      "components",
+      "lib",
+      "pages"
+    ],
+    "exclude": [],
+    "entrypoints": [
+      "pages"
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "10.0.9",
+    "preact": "^10.5.13",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-merge-refs": "^1.1.0",
+    "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.3",
+    "@types/classnames": "^2.2.11",
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "autoprefixer": "^10.2.4",
+    "next-unused": "^0.0.5",
+    "postcss": "^8.2.8",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.0.3",
+    "typescript": "^4.2.3"
+  }
+}

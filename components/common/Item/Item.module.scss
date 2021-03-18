@@ -1,0 +1,34 @@
+.root {
+    @apply block bg-white shadow-lg text-gray-darker text-left h-full transition-all duration-300;
+
+    @media (hover:hover) {
+        &:hover {
+            @apply shadow-xl transform -translate-y-1.5;
+
+            & .title {
+                @apply text-primary;
+            }
+        }
+    }
+}
+
+/* Fix bugs for hover effect */
+.image img,
+.caption>* {
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0) perspective(1px) scale3d(1, 1, 1);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.image {
+    @apply h-0 relative bg-gray-lightest;
+    padding-bottom: 76.05%;
+}
+
+.caption {
+    @apply px-5 py-4 leading-5;
+}
+
+.title {
+    @apply transition-colors;
+}
